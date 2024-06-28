@@ -1,8 +1,9 @@
 const express = require('express');
 const app = express();
+const data = require('./sofa')
 
 app.get('/',(req,res)=>{
-    res.send('hello world');
+    res.send.json(data);
 })
 
 app.listen(5000,()=>{
