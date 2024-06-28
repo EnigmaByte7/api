@@ -3,7 +3,7 @@ const app = express();
 const data = require('./sofa')
 
 app.get('/',(req,res)=>{
-    res.send.json(data);
+    res.json(data);
 })
 
 app.listen(5000,()=>{
