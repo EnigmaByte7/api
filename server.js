@@ -1,9 +1,9 @@
 const express = require('express');
 const app = express();
-const data = require('./sofa')
+const sofa= require('./sofa')
 
-app.get('/',(req,res)=>{
-    res.json(data);
+app.get('/products/sofa',(req,res)=>{
+    res.json(sofa);
 })
 
 app.listen(5000,()=>{
