@@ -2,6 +2,6 @@
   functions = "netlify/functions"
 
 [[redirects]]
-  from = "/api/*"
-  to = "/.netlify/functions/api"
+  from = "/products/*"
+  to = "/.netlify/functions/api/products/:splat"
   status = 200
